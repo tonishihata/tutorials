@@ -42,5 +42,5 @@ func main() {
 	defer logFile.Close()
 	log.SetOutput(logFile)
 
-	smtpd.ListenAndServe("172.30.112.1:25", mailHandler, "MyServerApp", "")
+	smtpd.ListenAndServe("127.0.0.1:25", mailHandler, "MyServerApp", "")
 }
